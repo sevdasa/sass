@@ -1,0 +1,168 @@
+.card{
+    width: 70vw;
+    // height: 10em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% auto;
+    border: 1px solid $card-border;
+    line-height: 7;
+    background-color: $white;
+}
+.right,.left{
+    margin-right: 2em;
+    color: $nav-right-c;
+    font-size: 12px;
+    .fas,a{
+        color: $nav-right-c;
+        margin-left: 6px;
+        font-size: 12px;
+
+    }
+    p:hover .fas{
+        color: $home-hover;
+    }
+    p:hover a{
+        color: $home-hover;
+    }
+
+}
+/* sell-slide */
+.sell-slide{
+    width: 70vw;
+    height: 30em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em auto;
+    background-color: $white;
+
+}
+.items{
+    flex: 0 0 23%;
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    border: 1px solid $card-border;
+
+
+}
+.image{
+    flex:0 0 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-between ;
+    align-items: space-between;
+}
+   
+.picture{
+    flex: 0 0 0%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        flex: 0 0 0%;
+        object-fit: cover;
+        flex: 0 0 30%;
+
+    }
+
+    
+}
+.name{
+    flex: 0 0 0%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5px;
+
+
+}
+.stok{
+    flex: 0 0 20%;
+    width: 90%;
+    display: flex;
+    padding:3px;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 13px;
+    color: $gray-caption;
+    .fas{
+         width: 19px;    
+        font-size: 10px;
+        background-color: $exist;
+        color: $white;
+        border-radius: 50%;
+        line-height: 2;
+        flex: 0 0 0%;
+        padding: 3px;
+        align-self: flex-start;
+        margin-right: 1.2px;
+    }
+    .fas[class$="times"]{
+        background-color: $notexist;
+    }
+}
+
+.price{
+    flex: 0 0 0%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.status{
+    flex: 0 0 0%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        background-color: $background-fas;
+        padding: 5px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: $bg-button;
+            .fas{
+                color: $white;
+            }
+
+        }
+
+    .fas{
+        color: $gray-caption;
+    }
+
+}
+
+}
+a.active{
+    background-color: $bg-button;
+    &:hover{
+        background-color: $notexist;
+    }
+    .fas{
+        color: $white;
+
+    }
+}

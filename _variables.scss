@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: IRANSans;
+    background-color: $body-color;
+}
+@font-face{
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url(fonts/AIranianSans.ttf);
+}
+li{
+    list-style: none;
+    font-size: 13px;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-top: 10px;
+    line-height: 1;
+    flex: 0 0 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start; 
+
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    
+
+}
+input{
+    flex: 0 0 200px;
+    line-height: 4;
+    
+}
+button{
+    flex: 0 0 90px;
+    line-height: 4;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.fab{
+    color: $left-color;
+}
+.picture_pro{
+    flex: 1 0 23%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    z-index: -1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex: 0 0 100%;
+
+    }
+}

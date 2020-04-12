@@ -1,0 +1,136 @@
+.nav-item{
+    position: sticky !important;    
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
+    height: 4em;
+}
+
+.nav-right{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    flex: 0 0 45%; 
+    ul{
+        flex: 0 0 100%;
+        width: 100%;
+
+    
+    li{
+        flex: 0 0 21%;
+     a{
+        color:$gray-caption;
+        font-size: 1em;
+
+     }
+    }
+   }
+    .fas{
+        color: $icon-nav;
+        margin-right: 5px;
+
+
+    }
+}
+.home{
+    line-height: 1;
+    align-self: center;
+    flex: 0 0 0%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;    
+.fas{
+    color: $home;
+    margin: 0;
+}
+}
+.home:hover .fas{
+    color: $home-hover;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 90px !important;
+    background-color: $white;
+    border: 1px solid rgba(0,0,0,.15);
+    text-align: center;
+    margin-top: 25px;
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+
+    }
+}
+li:hover .dropdown{
+    display: block;
+    visibility: visible;
+    z-index: 1;
+    
+}
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 40%;
+    width: 40%;
+    ul{
+        display:flex;
+        flex-direction: row-reverse;
+        flex: 0 0 80%;
+        li{
+           
+            flex-direction: row-reverse;
+            color: $left-color;
+            .fab{
+                color: $left-color;
+            }
+            .fab[class$="facebook-f"]:hover{
+                color: $facebook;
+            }
+            .fab[class$="twitter"]:hover{
+                color: $twitter;
+            }
+            .fab[class$="instagram"]:hover{
+                color: $instagram;
+            }
+            .fab[class$="linkedin-in"]:hover{
+                color: $linkdin;
+            }
+            p{
+                flex: 0 0 130px;
+                color: $left-color;
+                order: 1000;
+                font-size: 12px;
+
+            }
+            
+        }
+    }
+    
+    
+}
+.icon{
+    overflow: hidden;
+    position: relative;
+    display: none;
+    float: right;
+    width: 10vw;
+
+
+ 
+ 
+}
